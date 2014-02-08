@@ -10,7 +10,7 @@ public class DBUtil {
 	static Connection getConnected(){
 		try {
 			Class.forName("org.h2.Driver");
-			connected = DriverManager.getConnection("jdbc:h2:~/Users/nikolay/Cloud@Mail.Ru/Programming/Eclipse/DBPerson/test", "sa","");
+			connected = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/Users/nikolay/Cloud@Mail.Ru/Programming/Eclipse/DBPerson/dbPerson", "sa","");
 			return connected;
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
